@@ -18,6 +18,7 @@ function createSkybox(dim) {
 	return skyBox;
 }
 
+
 function createNightDayCycle() {
 	/* Questa funzione utilizza la libreria threex.daynight per realizzare un ciclo giorno/notte.
 	 * In particolare verranno restituiti tutti gli oggetti da aggiungere alla scena */
@@ -29,7 +30,7 @@ function createNightDayCycle() {
 
 	var result = {onRenderFcts: onRenderFcts}; // Oggetto che contiene i valori da restituire
 
-	var sunAngle = Math.PI;
+	var sunAngle = Math.PI/4;
 	result.sunAngle = sunAngle;
 	onRenderFcts.push(function(step){
 		sunAngle+= step
@@ -53,6 +54,20 @@ function createNightDayCycle() {
 	onRenderFcts.push(sunLight.update);
 
 	result.sunLight = sunLight.object3d;
+
+
+	/* Aggiungo una flare light per rendere più realistico il sole */
+	var textureFlare0 = THREE.ImageUtils.loadTexture("images/textures/lensflare0.png");
+    var flareColor = new THREE.Color(0xffaacc);
+    var lensFlare = new THREE.LensFlare(textureFlare0, 350, 0.0, THREE.AdditiveBlending, flareColor);
+	console.log(lensFlare);
+    lensFlare.update = function() {
+    	lensFlare.position = result.sunSphere.position;
+    }
+    onRenderFcts.push(lensFlare.update);
+
+    result.lensFlare = lensFlare;
+
 
 	return result;
 

@@ -10,28 +10,28 @@ function createLivingroom(toIntersect, videoTexture) {
 	livingroom.add(sofa);
 
 	/* Creo la poltrona */
-	var armchair = createObjectFromObj('models/livingroom/armChair.obj','models/livingroom/armChair.mtl');
+	var armchair = createObjectFromObj('models/livingroom/Armchair.obj','models/livingroom/Armchair.mtl');
 	armchair.position.set(2.5,3,0.07);
 	armchair.scale.set(.016,.016,.016);
 	armchair.rotation.set(Math.PI/2,0,0);
 	livingroom.add(armchair);
 
 	/* Creo il primo mobile */
-	var livingFurniture1 = createObjectFromObj('models/livingroom/livingFurniture1.obj','models/livingroom/livingFurniture1.mtl');
+	var livingFurniture1 = createObjectFromObj('models/livingroom/LivingFurniture1.obj','models/livingroom/LivingFurniture1.mtl');
 	livingFurniture1.position.set(0.4,1.7,0.2);
 	livingFurniture1.scale.set(.01,.01,.01);
 	livingFurniture1.rotation.set(Math.PI/2,Math.PI/2,0);
 	livingroom.add(livingFurniture1);
 
 	/* Creo il secondo mobile */
-	var livingFurniture2 = createObjectFromObj('models/livingroom/livingFurniture2.obj','models/livingroom/livingFurniture2.mtl');
+	var livingFurniture2 = createObjectFromObj('models/livingroom/LivingFurniture2.obj','models/livingroom/LivingFurniture2.mtl');
 	livingFurniture2.position.set(1.2,5.3,0.2);
 	livingFurniture2.scale.set(.01,.01,.01);
 	livingFurniture2.rotation.set(Math.PI/2,-Math.PI/2,0);
 	livingroom.add(livingFurniture2);
 
 	/* Creo il tavolo */
-	var table = createObjectFromObj('models/livingroom/livingTable.obj','models/livingroom/livingTable.mtl');
+	var table = createObjectFromObj('models/livingroom/LivingTable.obj','models/livingroom/LivingTable.mtl');
 	table.position.set(3.2,5.3,0.2);
 	table.scale.set(.01,.01,.01);
 	table.rotation.set(Math.PI/2,-Math.PI/2,0);

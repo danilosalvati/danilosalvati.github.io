@@ -6,7 +6,7 @@ $(function () {
   var showRoof = true; // Mostro o nascondo il tetto
   var enableMirror = false; // Abilito o disabilito lo specchio
   var updateTrackballControl = true; // Abilito o disabilito il trackball control
-  var enableDayNightCycle = true; // Abilito o disabilito il ciclo giorno/notte
+  var enableDayNightCycle = false; // Abilito o disabilito il ciclo giorno/notte
 
   // Coordinate della camera
   var camera_x = 120;
@@ -200,6 +200,8 @@ $(function () {
   scene.add(nightDayCycle.sunSphere);
   scene.add(nightDayCycle.sunLight);
 
+  var lensFlare =  nightDayCycle.lensFlare;
+  scene.add(lensFlare);
 
   
   /*****************************************************************************/
@@ -235,6 +237,7 @@ $(function () {
   /********************************** RENDERING ********************************/
   /*****************************************************************************/
 
+  updateNightDayCycle(); // Un aggiornamento del ciclo lo faccio comunque
   render();
 
   function render() {

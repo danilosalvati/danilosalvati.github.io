@@ -50,14 +50,14 @@ function createBathroom(mirrorCamera) {
 	bathroom.add(rackBathroom);
 
 	/* Creo il bidet */
-	var bidet = createObjectFromObj('models/bathroom/bidet.obj','models/bathroom/bidet.mtl');
+	var bidet = createObjectFromObj('models/bathroom/bidet.obj','models/bathroom/Bidet.mtl');
 	bidet.position.set(10,6.5,0.2);
 	bidet.scale.set(.001,.001,.001);
 	bidet.rotation.set(Math.PI/2,0,0);
 	bathroom.add(bidet);
 
 	/* Creo il rotolo di carta igienica */
-	var bathPaper = createObjectFromObj('models/bathroom/bathPaper.obj','models/bathroom/bathPaper.mtl');
+	var bathPaper = createObjectFromObj('models/bathroom/BathPaper.obj','models/bathroom/BathPaper.mtl');
 	bathPaper.position.set(10.95,6.2,0.8);
 	bathPaper.scale.set(.01,.01,.01);
 	bathPaper.rotation.set(Math.PI/2,-Math.PI/2,0);

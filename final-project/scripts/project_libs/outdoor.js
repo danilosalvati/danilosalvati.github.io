@@ -60,7 +60,6 @@ function createNightDayCycle() {
 	var textureFlare0 = THREE.ImageUtils.loadTexture("images/textures/lensflare0.png");
     var flareColor = new THREE.Color(0xffaacc);
     var lensFlare = new THREE.LensFlare(textureFlare0, 350, 0.0, THREE.AdditiveBlending, flareColor);
-	console.log(lensFlare);
     lensFlare.update = function() {
     	lensFlare.position = result.sunSphere.position;
     }

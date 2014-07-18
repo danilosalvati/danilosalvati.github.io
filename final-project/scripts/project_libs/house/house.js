@@ -40,7 +40,7 @@ function createHouse(toIntersect,videoTexture,water,water2,mirrorCamera,sounds) 
 	var roof = createRoof();
 
 	/* Aggiungo le luci */
-	//var lights =  createLights(toIntersect);
+	var lights =  createLights(toIntersect);
 
 	/* Arredo il bagno */
 	var bathroom = createBathroom(mirrorCamera);
@@ -68,7 +68,7 @@ function createHouse(toIntersect,videoTexture,water,water2,mirrorCamera,sounds) 
 	house.add(livingroom);
 	house.add(bedroom1);
 	house.add(bedroom2);
-	//house.add(lights);
+	house.add(lights);
 	return house;
 }
 

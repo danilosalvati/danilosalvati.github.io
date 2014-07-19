@@ -45,7 +45,7 @@ function createCeilingLamp() {
 		}
 	}
 
-	ceilingLamp.add(createObjectFromObj('models/CeilingLamp.obj','models/CeilingLamp.mtl',undefined,undefined,interactFunction));
+	ceilingLamp.add(createObjectFromObj('models/ceilingLamp.obj','models/ceilingLamp.mtl',undefined,undefined,interactFunction));
 
 	return ceilingLamp;
 }

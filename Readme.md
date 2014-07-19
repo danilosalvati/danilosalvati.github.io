@@ -55,15 +55,15 @@ This is the directory structure:
 This is the description for all scripts in project_libs:
 
 * Inside house folder there are scripts that build all rooms and the building
-* [gui](scripts/project_libs/gui.js): build dat.gui controls
-* [index.js](scripts/project_libs/index.js): main script, calls other files and build entire project
-* [motionDetection.js](scripts/project_libs/motionDetection.js): collects all functions needed for motion detection
-* [objectLoader.js](scripts/project_libs/objectLoader.js): function that loads an obj model with mtl file
-* [objectPicking.js](scripts/project_libs/objectPicking.js): functions for managing object picking
-* [outdoor.js](scripts/project_libs/outdoor.js): creates neighborhood (skybox, sun...)
-* [PLNavigation.js](scripts/project_libs/PLNavigation.js): manages pointer lock navigation
-* [sounds.js](scripts/project_libs/sounds.js): creates sound for some objects
-* [water.js](scripts/project_libs/water.js): creates water using an external library
+* [gui](final-project/scripts/project_libs/gui.js): build dat.gui controls
+* [index.js](final-project/scripts/project_libs/index.js): main script, calls other files and build entire project
+* [motionDetection.js](final-project/scripts/project_libs/motionDetection.js): collects all functions needed for motion detection
+* [objectLoader.js](final-project/scripts/project_libs/objectLoader.js): function that loads an obj model with mtl file
+* [objectPicking.js](final-project/scripts/project_libs/objectPicking.js): functions for managing object picking
+* [outdoor.js](final-project/scripts/project_libs/outdoor.js): creates neighborhood (skybox, sun...)
+* [PLNavigation.js](final-project/scripts/project_libs/PLNavigation.js): manages pointer lock navigation
+* [sounds.js](final-project/scripts/project_libs/sounds.js): creates sound for some objects
+* [water.js](final-project/scripts/project_libs/water.js): creates water using an external library
 
 ---
 

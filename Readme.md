@@ -83,3 +83,4 @@ This is the description for all scripts in project_libs:
 * **Fog**
 * **Sounds effects**
 * **Gui** for controlling some parts of the project
+* **Flare light** for the Sun

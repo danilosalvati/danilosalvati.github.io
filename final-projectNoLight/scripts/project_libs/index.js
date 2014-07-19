@@ -21,7 +21,7 @@ $(function () {
   var fogDensity = 0.001; // Densità della nebbia
 
   // Colori
-  var fogColor = 0xefd1ff; // Colore della nebbia
+  var fogColor = 0xafd1ff; // Colore della nebbia
 
 
   var toIntersect = []; // Qui memorizzo gli oggetti di cui voglio fare il picking
@@ -42,7 +42,7 @@ $(function () {
   scene.fog = new THREE.FogExp2(fogColor , fogDensity); // Aggiungo la nebbia
 
   /* Creo due camere, una principale e una per lo specchio */
-  var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+  var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 4000);
   camera.position.set(camera_x,camera_y,camera_z);
   camera.up.set( 0, 1, 0 );
   camera.lookAt(new THREE.Vector3(0, 0, 0));

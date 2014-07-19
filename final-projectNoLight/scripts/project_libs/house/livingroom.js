@@ -71,7 +71,7 @@ function createLivingroom(toIntersect, videoTexture) {
 	livingroom.add(tv);
 
 	var picture = createPicture('images/textures/livingroom/LivingPicture.jpg');
-	picture.position.set(3.2,6.5,1.7);
+	picture.position.set(3.2,6.55,1.7);
 	picture.scale.set(.1,.1,.1);
 	livingroom.add(picture);
 
